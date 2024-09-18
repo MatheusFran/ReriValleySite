@@ -3,18 +3,19 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import img1 from "./rerivalley2.png";
+import img2 from "./sebrae.png";
+import img3 from "./sicoob.png";
+import img4 from "./imepac.png";
+import img5 from "./suaFabrica.png";
+import img6 from "./japa.jpg";
 
 const images = [
   img1,
-  img1,
-  img1,
-  img1,
-  img1,
-  img1,
-  img1,
-  img1,
-  img1,
-  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
 
   // Adicione mais imagens conforme necessário
 ];
@@ -41,10 +42,10 @@ const HorizontalScrollCarousel = () => {
   }, []);
 
   return (
-    <div className="w-full overflow-hidden  py-12">
-      <div className="relative">
+    <div className="items-center justify-between p-10 overflow-hidden  py-12">
+      <div className="relative justify-between">
         <AnimatePresence initial={false}>
-          <motion.div className="flex space-x-8">
+          <motion.div className="flex space-x-4">
             {currentImages.map((image, index) => (
               <motion.div
                 key={`${image}-${index}`}
@@ -60,7 +61,7 @@ const HorizontalScrollCarousel = () => {
                   width={200}
                   height={100}
                   objectFit="contain"
-                  className="bg-white p-4 rounded-lg shadow-md"
+                  className="bg-white p-4 rounded-lg shadow-md h-[15vh] w-[220px] object-cover"
                 />
               </motion.div>
             ))}

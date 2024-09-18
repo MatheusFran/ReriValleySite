@@ -18,7 +18,12 @@ export default function Contact() {
           Desde Empreendedores Visionários até Estudantes e Pesquisadores,
           acreditamos que a colaboração é o caminho para o sucesso.
         </p>
-        <HorizontalScrollCarousel />
+        <div className="items-center justify-center">
+          <h2 className="text-3xl font-bold text-left text-white mb-4">
+            Quem Apoia:
+          </h2>
+          <HorizontalScrollCarousel />
+        </div>
       </div>
     </section>
   );

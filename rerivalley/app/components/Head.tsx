@@ -1,6 +1,8 @@
 // components/Header.js
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
+import logo from "../components/rerivalley2.png";
 
 export default function Header() {
   return (
@@ -13,7 +15,7 @@ export default function Header() {
             transition={{ duration: 0.5 }}
           >
             <Link href="/" className="text-2xl font-bold text-gray-800">
-              Nossa Empresa
+              <Image src={logo} alt="Logo" className="w-[10vw]" />
             </Link>
           </motion.div>
           <div className="hidden md:flex items-center space-x-4">

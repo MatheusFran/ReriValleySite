@@ -16,7 +16,7 @@ export default function About() {
             transition={{ duration: 0.5 }}
             className="md:w-1/2 mb-8 md:mb-0"
           >
-            <h2 className="text-3xl font-bold text-white  mb-4">Sobre Nós</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Sobre Nós</h2>
             <p className="text-white mb-4">
               O Rerivalley - Ecossistema Local de Inovação de Araguari-MG é um
               hub dinâmico dedicado à contribuição à inovação e ao
@@ -25,33 +25,46 @@ export default function About() {
               colaborando com, entidades municipais, poder público, instituições
               financeiras e de ensino de Araguari.
             </p>
-            <p className="text-gray-600 mb-4">
+            <p className="text-white mb-4">
               Promovemos a conexão entre os principais atores do ecossistema,
-              capacitando empresas e líderes através de metodologias avançadas,
-              benchmarking, e imersões focadas em acelerar a inovação aberta e a
-              transformação digital de produtos e serviços. Além disso,
-              entendemos que a educação é uma base para um mercado inovador e
-              sustentável. Por isso, buscamos conscientizar e capacitar
-              diferentes níveis e públicos, garantindo que o mercado local seja
-              formado por profissionais treinados e preparados para os desafios
-              do futuro.
-            </p>
-            <p className="text-gray-600">
-              Nosso compromisso é criar um ambiente colaborativo onde ideias
-              inovadoras possam florescer e gerar impacto positivo, conectando
-              talentos, tecnologias e recursos. Dessa forma, o Rerivalley se
-              torna o epicentro da inovação em Araguari, fomentando não apenas o
-              desenvolvimento econômico, mas também a formação educacional que
-              garante a longevidade e a sustentabilidade desse progresso.
+              capacitando empresas e líderes por meio de metodologias avançadas,
+              benchmarking e imersões voltadas para acelerar a inovação aberta e
+              a transformação digital de produtos e serviços, com foco na
+              conscientização e capacitação de diferentes públicos e níveis,
+              garantindo a formação de profissionais preparados para os desafios
+              futuros. Nosso compromisso é criar um ambiente colaborativo onde
+              ideias inovadoras possam gerar impacto positivo, conectando
+              talentos, tecnologias e recursos, posicionando o Rerivalley como o
+              epicentro da inovação em Araguari, impulsionando o desenvolvimento
+              econômico e educacional de forma sustentável.
             </p>
           </motion.div>
+
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="md:w-1/2"
+            className="md:w-1/2 relative h-[500px]"
           >
-            <LayeredCarousel />
+            {/* Carrossel retangular (estilo celular) */}
+            <motion.div
+              className="absolute bottom-0 left-0 w-3/5 h-full bg-gray-100 rounded-lg shadow-lg overflow-hidden z-10"
+              initial={{ x: -50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              <LayeredCarousel />
+            </motion.div>
+
+            {/* Carrossel mais quadrado */}
+            <motion.div
+              className="absolute bottom-0 right-0 w-3/5 h-4/5 bg-white rounded-lg shadow-lg overflow-hidden z-20"
+              initial={{ x: 50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+            >
+              <LayeredCarousel />
+            </motion.div>
           </motion.div>
         </div>
       </div>
