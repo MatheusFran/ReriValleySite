@@ -1,3 +1,4 @@
+'use client'
 // File: components/JoinForm.js
 import { useState } from "react";
 import { motion } from "framer-motion";

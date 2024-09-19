@@ -1,3 +1,4 @@
+'use client'
 // components/Footer.js (versão completa)
 export default function Footer() {
   return (

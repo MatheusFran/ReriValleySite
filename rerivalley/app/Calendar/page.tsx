@@ -1,3 +1,4 @@
+'use client';
 // File: components/Calendar.js
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
