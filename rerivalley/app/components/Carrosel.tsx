@@ -56,10 +56,7 @@ const LayeredCarousel = () => {
                   objectFit="cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="text-2xl font-bold">Image {index + 1}</h3>
-                  <p>Description for Image {index + 1}</p>
-                </div>
+                
               </div>
             </motion.div>
           );

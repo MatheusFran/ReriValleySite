@@ -6,6 +6,7 @@ import About from "./About/page";
 import Footer from "./Footer";
 import Features from "./Features/page";
 import Contact from "./Contact/page";
+import Calendar from "./Calendar/page";
 
 export default function App() {
   return (
@@ -26,7 +27,7 @@ export default function App() {
         <About />
         <Features />
         <Contact />
-        <h1>Cases reais</h1>
+
         <h1>Como participar</h1>
       </main>
 

@@ -46,25 +46,7 @@ export default function About() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="md:w-1/2 relative h-[500px]"
           >
-            {/* Carrossel retangular (estilo celular) */}
-            <motion.div
-              className="absolute bottom-0 left-0 w-3/5 h-full bg-gray-100 rounded-lg shadow-lg overflow-hidden z-10"
-              initial={{ x: -50, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.5 }}
-            >
-              <LayeredCarousel />
-            </motion.div>
-
-            {/* Carrossel mais quadrado */}
-            <motion.div
-              className="absolute bottom-0 right-0 w-3/5 h-4/5 bg-white rounded-lg shadow-lg overflow-hidden z-20"
-              initial={{ x: 50, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-            >
-              <LayeredCarousel />
-            </motion.div>
+            <LayeredCarousel />
           </motion.div>
         </div>
       </div>

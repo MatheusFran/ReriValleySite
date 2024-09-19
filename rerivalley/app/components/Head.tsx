@@ -19,12 +19,6 @@ export default function Header() {
             </Link>
           </motion.div>
           <div className="hidden md:flex items-center space-x-4">
-            <Link
-              href="/Features"
-              className="text-gray-800 hover:text-blue-600"
-            >
-              Recursos
-            </Link>
             <Link href="/About" className="text-gray-800 hover:text-blue-600">
               Sobre
             </Link>
