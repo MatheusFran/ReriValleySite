@@ -10,7 +10,7 @@ export default function JoinForm() {
     role: "",
   });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     // Lógica para enviar os dados do formulário
     console.log(formData);
